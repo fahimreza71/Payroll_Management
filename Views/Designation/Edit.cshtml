@@ -1,0 +1,35 @@
+﻿@model PayrollWebApp.Models.DesignationEntity
+
+@{
+    Layout = "_LayoutForAdmin";
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Designation</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           <input type="hidden" asp-for="DesignationId" />
+            <div class="form-group">
+                <label asp-for="DesignationType" class="control-label"></label>
+                <input asp-for="DesignationType" class="form-control" />
+                <span asp-validation-for="DesignationType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BaseSalary" class="control-label"></label>
+                <input asp-for="BaseSalary" class="form-control" />
+                <span asp-validation-for="BaseSalary" class="text-danger"></span>
+            </div><br/>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success" /> |
+                <a asp-action="Index" class="btn btn-primary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,76 @@
+﻿@model IEnumerable<PayrollWebApp.Models.PayrollEntity>
+
+@{
+    Layout = "_LayoutForAdmin";
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @* @Html.DisplayNameFor(model => model.EmployeeId) *@ ID
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Employees.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Designations)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Designations.BaseSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bonus)
+            </th>
+            <th>Total</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Month)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmployeeId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employees.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Designations.DesignationType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Designations.BaseSalary)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bonus)
+                </td>
+                <td>
+                    @{
+                        var total =  item.Bonus + item.Designations.BaseSalary;
+                        <p>@total</p>
+                        total = 0;
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Month)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.PayrollId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.PayrollId">Delete</a> |
+                    <a asp-action="DownloadPDF" asp-route-id="@item.PayrollId">PaySlip</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

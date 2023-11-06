@@ -1,0 +1,60 @@
+﻿@model PayrollWebApp.Models.PayrollEntity
+
+@{
+    Layout = "_LayoutForAdmin";
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>PayrollEntity</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PayrollId" />
+            <div class="form-group">
+                <label asp-for="EmployeeId" class="control-label"></label>
+                <input asp-for="EmployeeId" class="form-control" asp-items="@ViewBag.EmployeeDetails" hidden />
+                <input value="@ViewBag.EmployeeName" type="text" class="form-control" disabled />
+                <span asp-validation-for="EmployeeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesignationId" class="control-label"></label>
+                <input asp-for="DesignationId" class="form-control" asp-items="@ViewBag.Designation" hidden />
+                <input value="@ViewBag.DesignationType" type="text" class="form-control" disabled />
+                <span asp-validation-for="DesignationId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Designations.BaseSalary" class="control-label"></label>
+                <input asp-for="Designations.BaseSalary" class="form-control" asp-items="@ViewBag.BaseSalary" disabled />
+                <span asp-validation-for="Designations.BaseSalary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Month" class="control-label"></label>
+                <select asp-for="Month" class="form-control" asp-items="ViewBag.Month">
+                    <option>-- Select Month --</option>
+                </select>
+                <span asp-validation-for="Month" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bonus" class="control-label"></label>
+                <input asp-for="Bonus" class="form-control" />
+                <span asp-validation-for="Bonus" class="text-danger"></span>
+            </div>
+            <br/>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

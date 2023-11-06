@@ -1,0 +1,36 @@
+﻿@model PayrollWebApp.Models.DesignationEntity
+
+@{
+    Layout = "_LayoutForAdmin";
+    ViewData["Title"] = "Details";
+}
+
+<h1>Designation Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DesignationId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DesignationId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DesignationType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DesignationType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BaseSalary)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BaseSalary)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.DesignationId" class="btn btn-info">Edit</a> |
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>

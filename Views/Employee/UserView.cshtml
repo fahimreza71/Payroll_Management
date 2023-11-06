@@ -1,0 +1,9 @@
+﻿@model PayrollWebApp.Models.EmployeeEntity
+
+@{
+    Layout = "_LayoutForUser";
+}
+
+<h4>@Html.DisplayFor(model => model.EmployeeId)</h4><br/>
+<h4>@Html.DisplayFor(model => model.Name)</h4><br/>
+<a asp-action="UserProfile" asp-route-id="@Model?.EmployeeId">Profile</a>

@@ -1,0 +1,14 @@
+﻿@model PayrollWebApp.Models.EmployeeEntity
+
+@{
+    Layout = "_LayoutForUser";
+    ViewData["ID"] = @Model.EmployeeId;
+}
+
+<partial name="_HomeIndex" />
+
+@* <div class="text-center">
+    <hr/>
+    <a class="btn btn-primary" asp-controller="Employee" asp-action="UserProfile" asp-route-id="@Model?.EmployeeId">Profile</a> |
+    <a class="btn btn-primary" asp-controller="Payroll" asp-action="UserPayroll" asp-route-id="@Model?.EmployeeId">Payment</a>
+</div> *@

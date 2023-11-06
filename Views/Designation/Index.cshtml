@@ -1,0 +1,60 @@
+﻿@model IEnumerable<PayrollWebApp.Models.DesignationEntity>
+
+@{
+    Layout = "_LayoutForAdmin";
+    ViewData["Title"] = "Designation List";
+}
+
+<h1 class="text-center">Designation List</h1>
+
+@{
+    if (TempData["msg"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["msg"]<strong> Successfully!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+}
+
+<p>
+    <a asp-action="Create" asp-controller="Designation" class="btn btn-success">Create New</a>
+</p>
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DesignationId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesignationType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BaseSalary)
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td width="20%">
+                @Html.DisplayFor(modelItem => item.DesignationId)
+            </td>
+            <td width="20%">
+                @Html.DisplayFor(modelItem => item.DesignationType)
+            </td>
+                <td width="20%">
+                @Html.DisplayFor(modelItem => item.BaseSalary)
+            </td>
+            <td width="20%">
+                <a asp-action="Edit" asp-route-id="@item.DesignationId" class="btn btn-success">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DesignationId" class="btn btn-info">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DesignationId" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
