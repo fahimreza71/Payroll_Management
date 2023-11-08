@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\DotNET_Projects\\Payroll_Management_System\\Beginner_Payroll\\PayrollWebApp - v8.0\\PayrollWebApp.csproj": {}
+    "G:\\DotNET_Projects\\Payroll_Management_System\\Beginner_Payroll\\PayrollWebApp - v9.0\\PayrollWebApp.csproj": {}
   },
   "projects": {
-    "G:\\DotNET_Projects\\Payroll_Management_System\\Beginner_Payroll\\PayrollWebApp - v8.0\\PayrollWebApp.csproj": {
+    "G:\\DotNET_Projects\\Payroll_Management_System\\Beginner_Payroll\\PayrollWebApp - v9.0\\PayrollWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNET_Projects\\Payroll_Management_System\\Beginner_Payroll\\PayrollWebApp - v8.0\\PayrollWebApp.csproj",
+        "projectUniqueName": "G:\\DotNET_Projects\\Payroll_Management_System\\Beginner_Payroll\\PayrollWebApp - v9.0\\PayrollWebApp.csproj",
         "projectName": "PayrollWebApp",
-        "projectPath": "G:\\DotNET_Projects\\Payroll_Management_System\\Beginner_Payroll\\PayrollWebApp - v8.0\\PayrollWebApp.csproj",
+        "projectPath": "G:\\DotNET_Projects\\Payroll_Management_System\\Beginner_Payroll\\PayrollWebApp - v9.0\\PayrollWebApp.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNET_Projects\\Payroll_Management_System\\Beginner_Payroll\\PayrollWebApp - v8.0\\obj\\",
+        "outputPath": "G:\\DotNET_Projects\\Payroll_Management_System\\Beginner_Payroll\\PayrollWebApp - v9.0\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

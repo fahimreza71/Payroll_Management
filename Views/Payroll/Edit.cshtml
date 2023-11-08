@@ -5,9 +5,7 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>PayrollEntity</h4>
+<h1>Update Pay-Slip</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -45,15 +43,13 @@
             </div>
             <br/>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-success w-25 py-2" /> |
+                <a asp-action="Index" class="btn btn-primary py-2">Back to List</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

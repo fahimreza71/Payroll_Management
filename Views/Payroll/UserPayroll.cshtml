@@ -6,60 +6,92 @@
     ViewData["ID"] = @Model.Employees.EmployeeId;
 }
 
-<h1>UserPayroll</h1>
 
-<div>
-    <h4>PayrollEntity</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.EmployeeId)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.EmployeeId)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Employees.Name)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Employees.Name)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Designations.DesignationType)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Designations.DesignationType)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Designations.BaseSalary)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Designations.BaseSalary)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Month)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Month)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Bonus)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Bonus)
-        </dd>
-        <dt class = "col-sm-2">
-            Total
-        </dt>
-        <dd class = "col-sm-10">
-            @{
-                var total = Model.Bonus + Model.Designations.BaseSalary;
-                <p>@total</p>
-            }
-        </dd>
-    </dl>
+<div class="d-flex justify-content-center">
+    <div class="card shadow mt-4 border-0 mx-5 col-6">
+        <div class="card-header bg-primary bg-gradient ml-0 py-2">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="py-2 text-white">EMPLOYEE PAYMENT</h2>
+                </div>
+            </div>
+        </div>
+        <div class="card-body px-5 pb-4 pt-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row col-md-12">
+                        <div class="col-md-6">
+                            <p class="mb-0"><strong>ID</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.EmployeeId)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row col-md-12">
+                        <div class="col-md-6">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Employees.Name)</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Employees.Name)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row col-md-12">
+                        <div class="col-md-6">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Designations.DesignationType)</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Designations.DesignationType)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row col-md-12">
+                        <div class="col-md-6">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Designations.BaseSalary)</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Designations.BaseSalary)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row col-md-12">
+                        <div class="col-md-6">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Month)</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Month)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row col-md-12">
+                        <div class="col-md-6">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Bonus)</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Bonus)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row col-md-12">
+                        <div class="col-md-6">
+                            <p class="mb-0"><strong>Total</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            @{
+                                var total = Model.Bonus + Model.Designations.BaseSalary;
+                                <p class="mb-0">@total</p>
+                            }
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row col-md-12">
+                        <a class="btn btn-success col-md-5 mx-2 py-2" asp-action="DownloadPDF" asp-route-id="@Model?.PayrollId">Download PaySlip</a> |
+                        <a class="btn btn-primary col-md-3 mx-2 py-2" asp-action="Index" asp-controller="User" asp-route-id="@Model?.EmployeeId">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div>
-    <a class="btn btn-primary" asp-action="DownloadPDF" asp-route-id="@Model?.PayrollId">Download PaySlip</a> |
-    <a asp-action="Index" asp-controller="User" asp-route-id="@Model?.EmployeeId">Back</a>
-</div>
+

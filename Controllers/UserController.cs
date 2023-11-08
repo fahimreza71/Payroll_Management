@@ -63,7 +63,7 @@ namespace PayrollWebApp.Controllers
             {
                 context.Employees.Add(collection);
                 context.SaveChanges();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("LogIn","Employee");
             }
             return View();
         }
@@ -94,6 +94,7 @@ namespace PayrollWebApp.Controllers
             ViewBag.Designations = DesignationTypes;
 
             var data = context.Employees.Find(id);
+            data.Designations = context.Designations.FirstOrDefault(x => x.DesignationId == data.DesignationId);
 
             if (data == null)
             {
@@ -112,7 +113,7 @@ namespace PayrollWebApp.Controllers
             {
                 context.Employees.Update(collection);
                 context.SaveChanges();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("UserProfile", "Employee", new { id = collection.EmployeeId });
             }
             catch
             {

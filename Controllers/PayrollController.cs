@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PayrollWebApp.Models;
+using System.Net;
 using static iTextSharp.text.pdf.PdfDocument;
 
 namespace PayrollWebApp.Controllers
@@ -178,9 +179,13 @@ namespace PayrollWebApp.Controllers
 
         public ActionResult UserPayroll(int? id)
         {
-            var data = context.Payrolls.Find(id);
+            var data = context.Payrolls.FirstOrDefault(x => x.EmployeeId == id);
+            if(data == null)
+            {
+                return NotFound("Contact With Admin & Ask Him To Update Your Details (Designation + Pay-ROll)");
+            }
             data.Designations = context.Designations.Find(data.DesignationId);
-            data.Employees = context.Employees.Find(data.EmployeeId);
+            data.Employees = context.Employees.Find(id);
             return View(data);
         }
 
@@ -227,10 +232,6 @@ namespace PayrollWebApp.Controllers
 
             doc.Add(infoTBL);
 
-            // Add Employee Information
-            //Paragraph employeeInfo = new Paragraph($"\n\nEmployee Name: {data.Employees.Name}   Gender: {data.Employees.Gender}\n" +
-            //    $"Phone : {data.Employees.Phone}  Email : {data.Employees.Email}\nAddress : {data.Employees.Address}  Designation: {data.Designations.DesignationType}\n" +
-            //    $"Date Join : {data.Employees.DOJ}  Salary Month : {data.Month}\n\n");
             Paragraph employeeInfo = new Paragraph($"\n\n");
             doc.Add(employeeInfo);
 

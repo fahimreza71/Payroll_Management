@@ -5,13 +5,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 class="text-center">Employees Payment</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-success" asp-action="Create">Create New</a>
 </p>
 
-<table class="table">
+<table class="table table-bordered table-hover table-striped">
     <thead>
         <tr>
             <th>
@@ -66,9 +66,9 @@
                     @Html.DisplayFor(modelItem => item.Month)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.PayrollId">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@item.PayrollId">Delete</a> |
-                    <a asp-action="DownloadPDF" asp-route-id="@item.PayrollId">PaySlip</a>
+                    <a class="btn btn-info w-20" asp-action="Edit" asp-route-id="@item.PayrollId">Edit</a> |
+                    <a class="btn btn-danger w-30" asp-action="Delete" asp-route-id="@item.PayrollId">Delete</a> |
+                    <a class="btn btn-success w-35" asp-action="DownloadPDF" asp-route-id="@item.PayrollId">Download PaySlip</a>
                 </td>
             </tr>
         }

@@ -177,9 +177,12 @@ namespace PayrollWebApp.Controllers
         public ActionResult Delete(int id, EmployeeEntity employee)
         {
             var emp = context.Employees.Find(id);
+            var data = context.Payrolls.FirstOrDefault(x => x.EmployeeId == id);
 
             if (emp != null)
             {
+                context.Payrolls.Remove(data);
+                context.SaveChanges();
                 context.Employees.Remove(emp);
                 context.SaveChanges();
                 return RedirectToAction(nameof(Index));
@@ -229,9 +232,11 @@ namespace PayrollWebApp.Controllers
 
         public ActionResult UserProfile(int? id)
         {
-            var data = context.Payrolls.FirstOrDefault(x => x.EmployeeId ==  id);
-            data.Employees = context.Employees.Find(data.EmployeeId);
-            data.Designations = context.Designations.Find(data.DesignationId);
+            var data = context.Employees.Find(id);
+            if(data.DesignationId != null) 
+            {
+                data.Designations = context.Designations.Find(data.DesignationId);
+            }
             return View(data);
         }
     }

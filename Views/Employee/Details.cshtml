@@ -1,80 +1,124 @@
 ﻿@model PayrollWebApp.Models.EmployeeEntity
 
 @{
+    Layout = "_LayoutForAdmin";
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="d-flex justify-content-center">
+    <div class="card shadow mt-4 border-0 mx-5 col-8">
+        <div class="card-header bg-primary bg-gradient ml-0 py-2">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="py-2 text-white">Employee Profile</h2>
+                </div>
+            </div>
+        </div>
+        <div class="card-body px-5 pb-4 pt-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.EmployeeId)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.EmployeeId)</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Name)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Name)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Gender)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Gender)</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Phone)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Phone)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Email)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Email)</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Password)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Password)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.DOB)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.DOB)</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.DOJ)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.DOJ)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Address)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Address)</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Designations)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@ViewBag.data</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Designations.BaseSalary)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Designations.BaseSalary)</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p class="mb-0"><strong>@Html.DisplayNameFor(model => model.Role)</strong></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-muted mb-0">@Html.DisplayFor(model => model.Role)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div>
+                            <a class="btn btn-primary col-md-2 py-2" asp-action="Edit" asp-route-id="@Model?.EmployeeId">Edit</a> |
+                            <a class="btn btn-primary py-2" asp-action="Index">Back to List</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<div>
-    <h4>EmployeeEntity</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Gender)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Gender)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Password)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Password)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Phone)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Phone)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DOB)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DOB)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Address)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Address)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Role)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Role)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DOJ)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DOJ)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Designations)
-        </dt>
-        <dd class = "col-sm-10">
-            @* @Html.DisplayFor(model => model.Designations.DesignationType) *@
-            @* <input asp-for="DesignationId" asp-items="@ViewBag.Designations" disabled/> *@
-            <h6>@ViewBag.data</h6>
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.EmployeeId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
+
+

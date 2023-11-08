@@ -17,6 +17,8 @@ namespace PayrollWebApp.Models
         [Required]
         public string Email { get; set; }
         [Required]
+        [DataType(DataType.Password)]
+        [Display(Name = "Password")]
         public string Password { get; set; }
         [Required]
         public string Phone { get; set; }

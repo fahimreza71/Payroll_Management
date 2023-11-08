@@ -9,153 +9,153 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PayrollWebApp
 build_property.RootNamespace = PayrollWebApp
-build_property.ProjectDir = G:\DotNET_Projects\Payroll_Management_System\Beginner_Payroll\PayrollWebApp - v8.0\
+build_property.ProjectDir = G:\DotNET_Projects\Payroll_Management_System\Beginner_Payroll\PayrollWebApp - v9.0\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = G:\DotNET_Projects\Payroll_Management_System\Beginner_Payroll\PayrollWebApp - v8.0
+build_property.MSBuildProjectDirectory = G:\DotNET_Projects\Payroll_Management_System\Beginner_Payroll\PayrollWebApp - v9.0
 build_property._RazorSourceGeneratorDebug = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Admin/Index.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Admin/Privacy.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Admin/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Designation/Create.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Designation/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Designation/Delete.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Designation/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Designation/Details.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Designation/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Designation/Edit.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Designation/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Designation/Index.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Designation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Employee/Create.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Employee/Delete.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Employee/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Employee/Details.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Employee/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Employee/Edit.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Employee/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Employee/Index.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Employee/LogIn.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Employee/LogIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcTG9nSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Employee/UserProfile.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Employee/UserProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcVXNlclByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Employee/UserView.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Employee/UserView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcVXNlclZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Home/Index.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Home/Privacy.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Payroll/Create.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Payroll/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5cm9sbFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Payroll/Delete.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Payroll/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5cm9sbFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Payroll/Edit.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Payroll/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5cm9sbFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Payroll/Index.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Payroll/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5cm9sbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Payroll/UserPayroll.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Payroll/UserPayroll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5cm9sbFxVc2VyUGF5cm9sbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Shared/Error.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Shared/_HomeIndex.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Shared/_HomeIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib21lSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Shared/_PayrollView.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Shared/_PayrollView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXlyb2xsVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Shared/_ValidationScriptsPartial.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/User/Create.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/User/Edit.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/User/Index.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/User/Privacy.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/User/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/User/UserPayroll.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/User/UserPayroll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyUGF5cm9sbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/_ViewImports.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/_ViewStart.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Shared/_Layout.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-f1tb4p9ggq
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Shared/_LayoutForAdmin.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Shared/_LayoutForAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRGb3JBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-k0clha42fr
 
-[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v8.0/Views/Shared/_LayoutForUser.cshtml]
+[G:/DotNET_Projects/Payroll_Management_System/Beginner_Payroll/PayrollWebApp - v9.0/Views/Shared/_LayoutForUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRGb3JVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-izuatq6ltm
