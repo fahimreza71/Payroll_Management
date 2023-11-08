@@ -113,9 +113,17 @@ namespace PayrollWebApp.Controllers
 
             ViewBag.EmployeeDetails = EmpName;
             ViewBag.EmployeeName = EmpName.Name;
-            ViewBag.Designation = Desig;
-            ViewBag.DesignationType = Desig.DesignationType;
+            //ViewBag.Designation = Desig;
+            //ViewBag.DesignationType = Desig.DesignationType;
             ViewBag.BaseSalary = Desig.BaseSalary;
+
+            IEnumerable<SelectListItem> DesignationTypes =
+                    context.Designations.Select(x => new SelectListItem
+                    {
+                        Text = x.DesignationType,
+                        Value = x.DesignationId.ToString()
+                    });
+            ViewBag.Designations = DesignationTypes;
 
             List <SelectListItem> Month = new()
             {
