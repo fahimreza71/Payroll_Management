@@ -1,9 +1,9 @@
 # Payroll_Management_System
-This is a very basic Payroll project & I'm working on further improvements.
+This is an elementary Payroll project & I'm working on further improvements.
 
 ## Uses_Technologies
 1. ASP.NET Core MVC 6
-2. MSSQL Server
+2. MSSQL Server 2019
 3. Entity Framework Core
 4. CSS/Bootstrap
 5. HTML
@@ -13,7 +13,7 @@ This is a very basic Payroll project & I'm working on further improvements.
 ... ...  Continuing
 
 # Project_Screenshot
-A few of the pages are posted below. Download this project, then RUN for more experience in detail!
+A few of the pages are posted below. Download this project, then RUN for a more detailed experience!
 
 ## User_Registration (General)
 ![General_Reg](https://github.com/LazyBong71/Payroll_Management/assets/98608834/1ee6f896-9bb3-4ef0-9d00-8801a3b7d20b)
