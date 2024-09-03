@@ -1,5 +1,11 @@
 # Payroll_Management_System
-This is an elementary Payroll project & I'm working on further improvements.
+This ASP.NET Core 6 application is a comprehensive payroll management system designed to streamline employee and administrative tasks. It features functionalities for both employees and administrators, making it a robust solution for managing payroll efficiently.
+
+## Features
+* **Employee Profile Management:** Employees can create and manage their profiles.
+* **Daily Attendance Tracking:** Employees can register their daily attendance easily.
+* **Payslip Generation:** Generates and prints payslips at the end of each month.
+* **Admin Dashboard:** Administrators can perform CRUD (Create, Read, Update, Delete) operations on employee records and manage the MSSQL Server database.
 
 ## Uses_Technologies
 1. ASP.NET Core MVC 6
