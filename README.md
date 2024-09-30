@@ -1,6 +1,11 @@
 # Payroll_Management_System
 This ASP.NET Core 6 application is a comprehensive payroll management system designed to streamline employee and administrative tasks. It features functionalities for both employees and administrators, making it a robust solution for managing payroll efficiently.
 
+## Live_Experience
+  URL: https://fahimreza71.bsite.net/
+  
+  Email: demo@user.com Password: demo@user.com
+  
 ## Features
 * **Employee Profile Management:** Employees can create and manage their profiles.
 * **Daily Attendance Tracking:** Employees can register their daily attendance easily.
